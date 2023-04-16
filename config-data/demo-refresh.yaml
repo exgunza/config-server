@@ -2,4 +2,4 @@ server:
   port: 9595
 demo:
   refresh:
-    color: black
+    color: blue
