@@ -1,0 +1,12 @@
+server:
+  port: 8081
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          default-label: develop
+          uri: https://github.com/exgunza/demo-refresh-config
+          search-paths: config-data
+  application:
+    name: demo-config-server

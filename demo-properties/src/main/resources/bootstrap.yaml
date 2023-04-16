@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: demo-refresh #Igual que el yaml del git en la carpeta config-data
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:8081 #uri del config server
+#Configuramos para que actuator soporte el refresh
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
